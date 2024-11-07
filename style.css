@@ -1,0 +1,84 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease;
+}
+
+/* Título */
+.titulo {
+    font-size: 2.5em;
+    color: #ff616f;
+    margin-bottom: 20px;
+    animation: bounce 1.5s ease infinite;
+}
+
+/* Mensagem */
+.mensagem {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'cooper';
+    color: hotpink;
+}
+
+/* Imagens */
+.imagens {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+.imagens img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animação ao passar o mouse nas imagens */
+.imagens img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
